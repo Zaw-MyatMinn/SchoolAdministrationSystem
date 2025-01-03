@@ -238,153 +238,156 @@ textarea {
 
 	</nav>
 
-		<nav class="navbar">
-			<ul>
-				<h5 class="header">New Payment</h5>
-			</ul>
-			<ul>
-				<button type="submit" class="btn saveBtn" disabled>Make Payment</button>
-				<button type="reset" class="btn resetBtn" disabled>Reset</button>
-			</ul>
-			<img
-				src="https://files.axshare.com/gsc/E33S9V/94/35/95/943595
+	<nav class="navbar">
+		<ul>
+			<h5 class="header">New Payment</h5>
+		</ul>
+		<ul>
+			<button type="submit" class="btn saveBtn" disabled>Make
+				Payment</button>
+			<button type="reset" class="btn resetBtn" disabled>Reset</button>
+		</ul>
+		<img
+			src="https://files.axshare.com/gsc/E33S9V/94/35/95/943595
 					1505654fcb943cc075a4e02f53/images/student_create_form/u15.
 					svg?pageId=6763ed4d-0d87-4dfa-96ea-bfba4316f241">
 
-		</nav>
-		<div class="mainsection row">
-			<div class="container col-sm-6">
-				<%-- Student Information is start here--%>
-				<div class="row">
-					<div class="col">
-						<h5 class="header">Student Information</h5>
-						<div class="btnLine">
-							<p>_</p>
-						</div>
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="table col-sm-6">
-						<table class="table row-sm-6">
-							<tr>
-								<td class="font">Student Name<input type="text"
-									class="data" name="name" disabled/></td>
-							</tr>
-
-						</table>
-					</div>
-
-					<div class="table col-sm-6">
-						<table class="table row-sm-6">
-							<tr>
-								<td class="font">Search Student ID
-									<form action="searchStudentForPaymentPage">
-										<input type="search" class="data" required="true"
-											name="student_id" />
-									</form>
-								</td>
-							</tr>
-						</table>
-					</div>
-
-				</div>
-				<%-- Grade Information is start here--%>
-				<div class="row-sm-6">
-					<h5 class="header">Grade Information</h5>
+	</nav>
+	<div class="mainsection row">
+		<div class="container col-sm-6">
+			<%-- Student Information is start here--%>
+			<div class="row">
+				<div class="col">
+					<h5 class="header">Student Information</h5>
 					<div class="btnLine">
 						<p>_</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="table col-sm-4">
-						<table class="table row-sm-4">
-							<tr>
-								<td class="font">Grade<input type="text" class="data1"
-									name="name" disabled/></td>
-							</tr>
 
-						</table>
-					</div>
+			</div>
+			<div class="row">
+				<div class="table col-sm-6">
+					<table class="table row-sm-6">
+						<tr>
+							<td class="font">Student Name<input type="text" class="data"
+								name="name" disabled /></td>
+						</tr>
 
-					<div class="table col-sm-4">
-						<table class="table row-sm-4">
-							<tr>
-								<td class="font">Class<input type="text" class="data1"
-									name="mother_name" disabled/></td>
-							</tr>
-						</table>
-					</div>
-
-					<div class="table col-sm-4">
-						<table class="table row-sm-4">
-							<tr>
-								<td class="font">Amount<input type="text" class="data1"
-									name="mother_name" disabled/></td>
-							</tr>
-						</table>
-					</div>
+					</table>
 				</div>
-				<div class="u73_div">
-					<div class="amt">
-						<span>Total Amount of Tuition Fees&nbsp;:</span><input
-							type="text" class="data2" name="mother_name" disabled/>
-					</div>
-					<div class="amt">
-						<span>Total Discount Amount&nbsp; &nbsp; &nbsp; &nbsp;
-							&nbsp; &nbsp;:</span><input type="text" class="data2" name="mother_name" disabled/>
-					</div>
-					<div class="amt">
-						<span>Total Net Amount&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</span><input type="text"
-							class="data2" name="mother_name" disabled/>
-					</div>
+
+				<div class="table col-sm-6">
+					<table class="table row-sm-6">
+						<tr>
+							<td class="font">Search Student ID
+								<form action="searchStudentForPaymentPage">
+									<input type="search" class="data" required="true"
+										name="student_id" />
+								</form>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			<%-- Grade Information is start here--%>
+			<div class="row-sm-6">
+				<h5 class="header">Grade Information</h5>
+				<div class="btnLine">
+					<p>_</p>
 				</div>
 			</div>
-			<div class="container col-sm-6">
-				<div>
-					<h5 class="header">Make Payment</h5>
-					<div class="btnLine">
-						<p>_</p>
-					</div>
+			<div class="row">
+				<div class="table col-sm-4">
+					<table class="table row-sm-4">
+						<tr>
+							<td class="font">Grade<input type="text" class="data1"
+								name="name" disabled /></td>
+						</tr>
+
+					</table>
 				</div>
 
-				<div class="row" style="height: 80px;">
-					<div class="col-sm-4 font">
-						<input type="checkbox" id="myCheck" onclick="myFunction()" disabled>&nbsp;Has
-						Discount?
-					</div>
-					<div id="text1" data-label="percentage" style="display: none;"
-						class="col-sm-6 font">
-						<label>Discount Amount</label><input type="text" class="data"
-							name="discount">
-					</div>
+				<div class="table col-sm-4">
+					<table class="table row-sm-4">
+						<tr>
+							<td class="font">Class<input type="text" class="data1"
+								name="mother_name" disabled /></td>
+						</tr>
+					</table>
 				</div>
-				<div class="row" style="height: 120px;">
-					<div class="table col-sm-6">
-						<table class="table row-sm-6">
-							<tr>
-								<td class="font">Enter Payment Type<select class="data" disabled>
-										<option class="input_option" selected="" value="CASH DOWN">CASH
-											DOWN</option>
-										<option class="input_option" value="BANK TRANSFER">BANK
-											TRANSFER</option>
-								</select></td>
-							</tr>
 
-						</table>
-					</div>
-
-					<div class="table col-sm-6">
-						<table class="table row-sm-6">
-							<tr>
-								<td class="font">Payment Amount<input type="text"
-									name="amount" class="data" disabled></td>
-							</tr>
-						</table>
-					</div>
+				<div class="table col-sm-4">
+					<table class="table row-sm-4">
+						<tr>
+							<td class="font">Amount<input type="text" class="data1"
+								name="mother_name" disabled /></td>
+						</tr>
+					</table>
 				</div>
-				<!-- <div class="d-flex">
+			</div>
+			<div class="u73_div">
+				<div class="amt">
+					<span>Total Amount of Tuition Fees&nbsp;:</span><input type="text"
+						class="data2" name="mother_name" disabled />
+				</div>
+				<div class="amt">
+					<span>Total Discount Amount&nbsp; &nbsp; &nbsp; &nbsp;
+						&nbsp; &nbsp;:</span><input type="text" class="data2" name="mother_name"
+						disabled />
+				</div>
+				<div class="amt">
+					<span>Total Net Amount&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</span><input type="text"
+						class="data2" name="mother_name" disabled />
+				</div>
+			</div>
+		</div>
+		<div class="container col-sm-6">
+			<div>
+				<h5 class="header">Make Payment</h5>
+				<div class="btnLine">
+					<p>_</p>
+				</div>
+			</div>
+
+			<div class="row" style="height: 80px;">
+				<div class="col-sm-4 font">
+					<input type="checkbox" id="myCheck" onclick="myFunction()" disabled>&nbsp;Has
+					Discount?
+				</div>
+				<div id="text1" data-label="percentage" style="display: none;"
+					class="col-sm-6 font">
+					<label>Discount Amount</label><input type="text" class="data"
+						name="discount">
+				</div>
+			</div>
+			<div class="row" style="height: 120px;">
+				<div class="table col-sm-6">
+					<table class="table row-sm-6">
+						<tr>
+							<td class="font">Enter Payment Type<select class="data"
+								disabled>
+									<option class="input_option" selected="" value="CASH DOWN">CASH
+										DOWN</option>
+									<option class="input_option" value="BANK TRANSFER">BANK
+										TRANSFER</option>
+							</select></td>
+						</tr>
+
+					</table>
+				</div>
+
+				<div class="table col-sm-6">
+					<table class="table row-sm-6">
+						<tr>
+							<td class="font">Payment Amount<input type="text"
+								name="amount" class="data" disabled></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- <div class="d-flex">
 	<div class="droplist col-sm-6">
 		<div>Enter Payment Type</div>
           <select class="data">
@@ -397,12 +400,12 @@ textarea {
           <input  type="text" name="amount" class="data">
         </div>
 </div> -->
-				<div class="box ">
-					<div>Remark</div>
-					<textarea class="col " name="freeform" rows="4" cols="50" disabled>
+			<div class="box ">
+				<div>Remark</div>
+				<textarea class="col " name="freeform" rows="4" cols="50" disabled>
 					</textarea>
-				</div>
 			</div>
 		</div>
+	</div>
 </body>
 </html>

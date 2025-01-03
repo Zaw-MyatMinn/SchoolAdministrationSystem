@@ -64,7 +64,7 @@
 <body>
 	<!-- <p class="text-body-secondary">Secondary body text</p>
     <button type="button" class="btn btn-primary" >Save</button> -->
-    <%@ include file="menu.jsp"%>
+	<%@ include file="menu.jsp"%>
 	<div class="container" id="container">
 		<div class="row">
 			<div>

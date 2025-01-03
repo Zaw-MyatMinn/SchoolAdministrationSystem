@@ -31,18 +31,18 @@ public class ClasDaoImpl implements ClasDao {
 		session.getTransaction().commit();
 
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	@Override 
+	@Override
 	public List<Clas> listClas() {
-		
+
 		Session session = sessionFactory.getCurrentSession();
 		session.beginTransaction();
 		List<Clas> clas = null;
 		try {
 			System.out.println("List............");
-			clas = (List<Clas>)session.createQuery("from Clas").list();
-			
+			clas = (List<Clas>) session.createQuery("from Clas").list();
+
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			session.getTransaction().rollback();
@@ -50,15 +50,15 @@ public class ClasDaoImpl implements ClasDao {
 		session.getTransaction().commit();
 		return clas;
 	}
-	
-	@Override 
+
+	@Override
 	public Clas getClassId(int class_id) {
 		Session session = sessionFactory.getCurrentSession();
-		Clas clas=null;
+		Clas clas = null;
 		try {
 			System.out.println("getting class id");
 			session.beginTransaction();
-		    clas = (Clas) session.get(Clas.class, class_id);
+			clas = (Clas) session.get(Clas.class, class_id);
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			session.getTransaction().rollback();
@@ -66,18 +66,18 @@ public class ClasDaoImpl implements ClasDao {
 		session.getTransaction().commit();
 		return clas;
 	}
-	
+
 	@Override
 	public void updateClas(Clas clas) {
 		Session session = (sessionFactory).getCurrentSession();
 		try {
 			session.beginTransaction();
 			session.merge(clas);
-		  } catch (HibernateException e) {
-			  e.printStackTrace();
-			  session.getTransaction().rollback();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
 		}
-			session.getTransaction().commit();
-		
+		session.getTransaction().commit();
+
 	}
 }

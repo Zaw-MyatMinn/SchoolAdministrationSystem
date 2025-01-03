@@ -31,18 +31,18 @@ public class GradeDaoImpl implements GradeDao {
 		session.getTransaction().commit();
 
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	@Override 
+	@Override
 	public List<Grade> listGrade() {
-		
+
 		Session session = sessionFactory.getCurrentSession();
 		session.beginTransaction();
 		List<Grade> grade = null;
 		try {
 			System.out.println("List............");
-			grade = (List<Grade>)session.createQuery("from Grade").list();
-			
+			grade = (List<Grade>) session.createQuery("from Grade").list();
+
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			session.getTransaction().rollback();
@@ -50,15 +50,15 @@ public class GradeDaoImpl implements GradeDao {
 		session.getTransaction().commit();
 		return grade;
 	}
-	
-	@Override 
+
+	@Override
 	public Grade getId(int grade_id) {
 		Session session = sessionFactory.getCurrentSession();
-		Grade grade=null;
+		Grade grade = null;
 		try {
 			System.out.println("getting grade id");
 			session.beginTransaction();
-		    grade = (Grade) session.get(Grade.class, grade_id);
+			grade = (Grade) session.get(Grade.class, grade_id);
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			session.getTransaction().rollback();
@@ -66,18 +66,18 @@ public class GradeDaoImpl implements GradeDao {
 		session.getTransaction().commit();
 		return grade;
 	}
-	
+
 	@Override
 	public void updateGrade(Grade grade) {
 		Session session = (sessionFactory).getCurrentSession();
 		try {
 			session.beginTransaction();
 			session.merge(grade);
-		  } catch (HibernateException e) {
-			  e.printStackTrace();
-			  session.getTransaction().rollback();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
 		}
-			session.getTransaction().commit();
-		
+		session.getTransaction().commit();
+
 	}
 }

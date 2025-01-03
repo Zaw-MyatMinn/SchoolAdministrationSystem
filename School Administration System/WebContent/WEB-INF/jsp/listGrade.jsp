@@ -60,18 +60,17 @@
 	height: 10px;
 }
 
-#container{
+#container {
 	margin: 0;
 	padding: 0;
 }
-
 </style>
 </head>
 <body>
 	<!-- <p class="text-body-secondary">Secondary body text</p>
     <button type="button" class="btn btn-primary" >Save</button> -->
-    <%@ include file="menu.jsp"%>
-	<div  id="container">
+	<%@ include file="menu.jsp"%>
+	<div id="container">
 		<div class="row">
 			<div>
 				<div class="d-flex firstrow">
@@ -87,7 +86,8 @@
 									</svg></i>
 							</div>
 							<div class="col-10">
-								<p class="fw-bold pt-1">Welcome to JUDO School Administration System</p>
+								<p class="fw-bold pt-1">Welcome to JUDO School
+									Administration System</p>
 							</div>
 						</div>
 					</div>

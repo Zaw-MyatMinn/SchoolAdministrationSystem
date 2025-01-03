@@ -3,27 +3,24 @@ package dto;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="student_academic")
+@Table(name = "student_academic")
 public class Student_Academic {
-	
+
 	@Id
 	@GeneratedValue
-	@Column(name="academic_id")
+	@Column(name = "academic_id")
 	private int academic_id;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="student_id")
+	@JoinColumn(name = "student_id")
 	private Student_Registration student;
 
 	private int select_student_id;
@@ -45,9 +42,9 @@ public class Student_Academic {
 //	}
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="grade_id")
+	@JoinColumn(name = "grade_id")
 	private Grade grade;
-	
+
 //	@Enumerated(EnumType.STRING)
 //	@Column(name="payment_status")
 //	private Payment_Status payment_status=Payment_Status.Unpaid;
@@ -84,8 +81,6 @@ public class Student_Academic {
 		this.clas = clas;
 	}
 
-	
-
 	public Double getPromotion() {
 		return promotion;
 	}
@@ -117,8 +112,7 @@ public class Student_Academic {
 	public void setTution_fee_pay_type(PaymentType tution_fee_pay_type) {
 		this.tution_fee_pay_type = tution_fee_pay_type;
 	}
-	
-	
+
 	public Double getTotal_tution_fee_amount() {
 		return total_tution_fee_amount;
 	}
@@ -128,25 +122,25 @@ public class Student_Academic {
 	}
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="class_id")
+	@JoinColumn(name = "class_id")
 	private Clas clas;
-	
-	@Column(name="promotion")
+
+	@Column(name = "promotion")
 	private Double promotion;
-	
-	@Column(name="class_amount",length = 10)
+
+	@Column(name = "class_amount", length = 10)
 	private Double class_amount;
-	
-	@Column(name="remark",length = 50)
+
+	@Column(name = "remark", length = 50)
 	private String remark;
-	
-	@Column(name="payment_type",length=10)
+
+	@Column(name = "payment_type", length = 10)
 	private PaymentType tution_fee_pay_type;
-	
-	@Column(name="total_tution_fee_amount",length = 10)
+
+	@Column(name = "total_tution_fee_amount", length = 10)
 	private Double total_tution_fee_amount;
-	
-	@Column(name="academic_year",length=10)
+
+	@Column(name = "academic_year", length = 10)
 	private String academic_year;
 
 	public String getAcademic_year() {
@@ -156,5 +150,5 @@ public class Student_Academic {
 	public void setAcademic_year(String academic_year) {
 		this.academic_year = academic_year;
 	}
-	
+
 }

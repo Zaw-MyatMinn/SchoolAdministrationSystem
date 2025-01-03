@@ -83,8 +83,6 @@ public class Controller {
 		model.addObject("sapList", sapList);
 		return model;
 	}
-	
-	
 
 	// list student controller
 	@RequestMapping(value = "/listStudent")

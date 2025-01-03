@@ -164,9 +164,10 @@
 }
 
 <
-script>function disableNumbers(enable) {
-	var enableInput=document.getElementById("inputBlock");
-	enableInput.disable.enable;
+script>function disableNumbers(enable) {var
+	enableInput=document.getElementById("inputBlock");enableInput
+	.disable.enable;
+	
 }
 </
 script
@@ -175,7 +176,7 @@ script
 </head>
 
 <body class="body-container container">
-	
+
 	<nav class="navbar navbar-expand-lg navbar-light navBg">
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -199,103 +200,101 @@ script
 		</div>
 
 	</nav>
-		<nav class="navbar">
-			<ul>
-				<h5 class="header">Register New Student</h5>
-			</ul>
-			<img
-				src="https://files.axshare.com/gsc/E33S9V/94/35/95/943595
+	<nav class="navbar">
+		<ul>
+			<h5 class="header">Register New Student</h5>
+		</ul>
+		<img
+			src="https://files.axshare.com/gsc/E33S9V/94/35/95/943595
 					1505654fcb943cc075a4e02f53/images/student_create_form/u15.
 					svg?pageId=6763ed4d-0d87-4dfa-96ea-bfba4316f241">
 
-		</nav>
+	</nav>
 
-		<%-- Student Information is start here--%>
+	<%-- Student Information is start here--%>
 
-		<div class="row">
-			<div class="table col-sm-3">
-				<h5 class="header">Student Information</h5>
-				<div class="btnLine">
-					<p>_</p>
-				</div>
-				<table class="table row-sm-6">
-					<tr>
-						<td class="font">Search Student ID
-							<form action="searchStudentForAcademic">
-								<input type="search" class="data"
-								required="true" name="student_id"/>
-							</form>
-						</td>
-					</tr>
-					<tr>
-						<td class="font">Select Grade<input type="text" class="data"
-							disabled/></td>
-					</tr>
-					<tr>
-						<td class="font">Amount<input type="text" class="data"
-							disabled/></td>
-					</tr>
-				</table>
+	<div class="row">
+		<div class="table col-sm-3">
+			<h5 class="header">Student Information</h5>
+			<div class="btnLine">
+				<p>_</p>
 			</div>
-
-			<div class="table col-sm-3">
-				<table class="table row-sm-6">
-					<h5 class="header white">.</h5>
-					<div class="btnLine white">
-						<p>.</p>
-					</div>
-					<tr>
-						<td class="font">Student<input type="text" class="data"
-							disabled  /></td>
-					</tr>
-					<tr>
-						<td class="font">Select Class<input type="text" class="data"
-							disabled/></td>
-					</tr>
-					<tr>
-						<td class="font">Academic Year<input type="text" class="data"
-							disabled/></td>
-					</tr>
-				</table>
-			</div>
-			<div class="table col-sm-6 ">
-				<h5 class="header ">Tution Fees</h5>
-				<div class="btnLine">
-					<p>_</p>
-				</div>
-				<table class="table row-sm-6">
-					<tr>
-						<td class="font"><br> 
-							<select name="payment"
-								id="payment" class="data cashDown" disabled>
-									<optgroup label="payment method">
-										<option value="volvo">Cash Down</option>
-										<option value="saab">Banking</option>
-									</optgroup>
-							</select>
-						</td>
-
-					</tr>
-					<tr>
-						<td class="font">Payment Amount<input type="text"
-							class="data paymentAmount" disabled/></td>
-					</tr>
-					<tr>
-						<td>
-							<form action="#">
-								<input type="checkbox" disabled>
-								<label for="vehicle1" class="font"> Has Promotion?</label><br>
-							</form>
-						</td>
-					</tr>
-					<tr>
-						<td class="font">Remark<input type="text" class="data remark"
-							disabled /></td>
-					</tr>
-				</table>
-			</div>
-			<h5>Total Amount of Tuition Fees:</h5>
+			<table class="table row-sm-6">
+				<tr>
+					<td class="font">Search Student ID
+						<form action="searchStudentForAcademic">
+							<input type="search" class="data" required="true"
+								name="student_id" />
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td class="font">Select Grade<input type="text" class="data"
+						disabled /></td>
+				</tr>
+				<tr>
+					<td class="font">Amount<input type="text" class="data"
+						disabled /></td>
+				</tr>
+			</table>
 		</div>
+
+		<div class="table col-sm-3">
+			<table class="table row-sm-6">
+				<h5 class="header white">.</h5>
+				<div class="btnLine white">
+					<p>.</p>
+				</div>
+				<tr>
+					<td class="font">Student<input type="text" class="data"
+						disabled /></td>
+				</tr>
+				<tr>
+					<td class="font">Select Class<input type="text" class="data"
+						disabled /></td>
+				</tr>
+				<tr>
+					<td class="font">Academic Year<input type="text" class="data"
+						disabled /></td>
+				</tr>
+			</table>
+		</div>
+		<div class="table col-sm-6 ">
+			<h5 class="header ">Tution Fees</h5>
+			<div class="btnLine">
+				<p>_</p>
+			</div>
+			<table class="table row-sm-6">
+				<tr>
+					<td class="font"><br> <select name="payment" id="payment"
+						class="data cashDown" disabled>
+							<optgroup label="payment method">
+								<option value="volvo">Cash Down</option>
+								<option value="saab">Banking</option>
+							</optgroup>
+					</select></td>
+
+				</tr>
+				<tr>
+					<td class="font">Payment Amount<input type="text"
+						class="data paymentAmount" disabled /></td>
+				</tr>
+				<tr>
+					<td>
+						<form action="#">
+							<input type="checkbox" disabled> <label for="vehicle1"
+								class="font"> Has Promotion?</label><br>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td class="font">Remark<input type="text" class="data remark"
+						disabled /></td>
+				</tr>
+			</table>
+		</div>
+		<h5>Total Amount of Tuition Fees:</h5>
+	</div>
 
 </body>
 </html>

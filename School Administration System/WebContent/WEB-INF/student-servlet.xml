@@ -36,8 +36,9 @@
 			<ref bean="sessionFactory" />
 		</constructor-arg>
 	</bean>
-	
-	<bean id="studentAcademicPaymentDao" class="dao.StudentAcademicPaymentDaoImpl">
+
+	<bean id="studentAcademicPaymentDao"
+		class="dao.StudentAcademicPaymentDaoImpl">
 		<constructor-arg>
 			<ref bean="sessionFactory" />
 		</constructor-arg>

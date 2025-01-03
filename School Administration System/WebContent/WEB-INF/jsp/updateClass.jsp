@@ -29,7 +29,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width:215px;
+	width: 215px;
 	height: 25px;
 	border-style: solid;
 	border-radius: 8px;
@@ -195,7 +195,8 @@
 				<table class="table">
 					<tr>
 						<td class="font">Class Name</td>
-						<td><input type="text" class="data" name="name" value="${ c.name}" maxlength="50"/></td>
+						<td><input type="text" class="data" name="name"
+							value="${ c.name}" maxlength="50" /></td>
 					</tr>
 				</table>
 			</div>
@@ -203,7 +204,8 @@
 				<table class="table">
 					<tr>
 						<td class="font">Class Code</td>
-						<td><input type="text" class="data" name="code" value="${ c.code}" maxlength="10"/></td>
+						<td><input type="text" class="data" name="code"
+							value="${ c.code}" maxlength="10" /></td>
 					</tr>
 				</table>
 			</div>
@@ -211,8 +213,10 @@
 				<table class="table">
 					<tr>
 						<td class="font">Description</td>
-						<td><input type="text" class="data" name="description" value="${ c.description}" maxlength="255"/></td>
-						<td><input name="class_id" value="${ c.class_id}" hidden="true"/></td>
+						<td><input type="text" class="data" name="description"
+							value="${ c.description}" maxlength="255" /></td>
+						<td><input name="class_id" value="${ c.class_id}"
+							hidden="true" /></td>
 					</tr>
 				</table>
 			</div>

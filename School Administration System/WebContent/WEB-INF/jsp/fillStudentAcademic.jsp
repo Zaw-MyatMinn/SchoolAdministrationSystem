@@ -71,7 +71,6 @@
 	border-radius: 20px;
 }
 
-
 .header-title {
 	color: #00000;
 	font-weight: 700;
@@ -153,8 +152,6 @@
 	width: 500px;
 	height: 60px;
 }
-
-
 </style>
 
 </head>
@@ -212,9 +209,9 @@
 				<table class="table row-sm-6">
 					<tr>
 						<td class="font">Student ID <input class="data"
-							required="true" value="${sr.student_id}" name="select_student_id"/>
+							required="true" value="${sr.student_id}" name="select_student_id" />
 						</td>
-					
+
 					</tr>
 					<tr>
 						<td class="font">Select Grade <input class="data"
@@ -223,14 +220,14 @@
 					</tr>
 					<tr>
 						<td class="font">Amount <input id="amount"
-							onkeyup="autoFillAmount()" class="data" required="true" name="class_amount"/> 
-							<script>
+							onkeyup="autoFillAmount()" class="data" required="true"
+							name="class_amount" /> <script>
 								function autoFillAmount() {
 									var amount = document
 											.getElementById('amount');
 									var title_id = document
 											.getElementById('auto_fill_amount');
-									title_id.value=amount.value;
+									title_id.value = amount.value;
 								}
 							</script>
 						</td>
@@ -251,13 +248,13 @@
 					</tr>
 					<tr>
 						<td class="font">Select Class<input class="data"
-							value="${sr.clas.name }" >
-							
+							value="${sr.clas.name }">
+
 						</td>
 					</tr>
 					<tr>
 						<td class="font">Academic Year<input type="text" class="data"
-							value="2024-" name="academic_year" ></td>
+							value="2024-" name="academic_year"></td>
 					</tr>
 				</table>
 			</div>
@@ -279,38 +276,40 @@
 					</tr>
 					<tr>
 						<td class="font">Payment Amount<input type="text"
-							class="data" id="auto_fill_amount"  required="true" disabled/></td>
+							class="data" id="auto_fill_amount" required="true" disabled /></td>
 					</tr>
 					<tr>
 						<td><label for="myCheck" class="font">Has Promotion?</label>
 							<input type="checkbox" id="myCheck" onclick="percentage()">
 
 							<p id="text" style="display: none" class="font">
-								Percentage%
-										<input onkeyup="calculatePercentage()" class="data"  name="promotion" id="percent" >
-							<script>
-								function percentage() {
-									var checkBox = document
-											.getElementById("myCheck");
-									var text = document.getElementById("text");
-									if (checkBox.checked == true) {
-										text.style.display = "block";
-									} else {
-										text.style.display = "none";
+								Percentage% <input onkeyup="calculatePercentage()" class="data"
+									name="promotion" id="percent">
+								<script>
+									function percentage() {
+										var checkBox = document
+												.getElementById("myCheck");
+										var text = document
+												.getElementById("text");
+										if (checkBox.checked == true) {
+											text.style.display = "block";
+										} else {
+											text.style.display = "none";
+										}
 									}
-								}
-								function calculatePercentage() {
-									var amount = document
-									.getElementById('amount');
-									var percentage =document
-									.getElementById('percent');
-									var totalAmount=document.getElementById('total');
-									
-									totalAmount.value=amount.value - ( (percentage.value*amount.value) / 100);
-									
-								}
-							</script>
-						</td>
+									function calculatePercentage() {
+										var amount = document
+												.getElementById('amount');
+										var percentage = document
+												.getElementById('percent');
+										var totalAmount = document
+												.getElementById('total');
+
+										totalAmount.value = amount.value
+												- ((percentage.value * amount.value) / 100);
+
+									}
+								</script></td>
 					</tr>
 					<tr>
 						<td class="font">Remark<input type="text" class="data "
@@ -320,12 +319,15 @@
 				</table>
 			</div>
 			<div class="noWrap">
-				<h5>Total Amount of Tuition Fees<input class="data" id="total" name="total_tution_fee_amount" required="true"/></h5>
+				<h5>
+					Total Amount of Tuition Fees<input class="data" id="total"
+						name="total_tution_fee_amount" required="true" />
+				</h5>
 			</div>
 		</div>
 	</form:form>
-	
-	
+
+
 
 </body>
 </html>

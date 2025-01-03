@@ -8,14 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "student_registration")
 public class Student_Registration {
-	
+
 	@Id
 	@GeneratedValue
 	@Column(name = "student_id")
@@ -236,12 +234,11 @@ public class Student_Registration {
 	private String present_address;
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="grade_id")
+	@JoinColumn(name = "grade_id")
 	private Grade grade;
-	
-	private int selectedGrade; 
+
+	private int selectedGrade;
 	private int selectedClass;
-	
 
 	public int getSelectedClass() {
 		return selectedClass;
@@ -254,7 +251,6 @@ public class Student_Registration {
 	public int getSelectedGrade() {
 		return selectedGrade;
 	}
-
 
 	public void setSelectedGrade(int g) {
 		this.selectedGrade = g;
@@ -281,7 +277,7 @@ public class Student_Registration {
 	}
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="class_id")
+	@JoinColumn(name = "class_id")
 	private Clas clas;
 
 }

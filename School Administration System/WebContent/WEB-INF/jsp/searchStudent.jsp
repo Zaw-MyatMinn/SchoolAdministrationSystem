@@ -109,18 +109,18 @@
 							<th scope="col">Status</th>
 						</tr>
 						<tr>
-								<td>${a.student_photo}</td>
-								<td>${a.student_id}</td>
-								<td>${a.name}</td>
-								<td>${a.gender}</td>
-								<td>${a.date_of_birth}</td>
-								<td>${a.father_name}</td>
-								<td>${a.address}</td>
-								<td>${a.father_phone_no}</td>
-								<td>${a.father_phone_no}</td>
-								<td>${a.email}</td>
-								<td>admin</td>
-								<td>active</td>
+							<td>${a.student_photo}</td>
+							<td>${a.student_id}</td>
+							<td>${a.name}</td>
+							<td>${a.gender}</td>
+							<td>${a.date_of_birth}</td>
+							<td>${a.father_name}</td>
+							<td>${a.address}</td>
+							<td>${a.father_phone_no}</td>
+							<td>${a.father_phone_no}</td>
+							<td>${a.email}</td>
+							<td>admin</td>
+							<td>active</td>
 						</tr>
 					</table>
 				</div>

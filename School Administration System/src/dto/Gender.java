@@ -1,5 +1,5 @@
 package dto;
 
 public enum Gender {
-	MALE,FEMALE,OTHER,Male,Female,Other,male,female,other
+	MALE, FEMALE, OTHER, Male, Female, Other, male, female, other
 }

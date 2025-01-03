@@ -2,7 +2,6 @@ package dao;
 
 import java.util.List;
 
-import dto.Grade;
 import dto.Student_Academic;
 
 public interface StudentAcademicDao {

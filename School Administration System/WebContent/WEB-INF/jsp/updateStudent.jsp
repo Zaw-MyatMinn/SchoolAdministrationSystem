@@ -263,7 +263,7 @@
 					<tr>
 						<td class="font">Student Id</td>
 						<td><input type="text" class="data" value="${a.student_id}"
-							name="student_id" readonly="true"/></td>
+							name="student_id" readonly="true" /></td>
 					</tr>
 
 				</table>

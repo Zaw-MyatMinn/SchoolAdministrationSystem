@@ -333,7 +333,7 @@
 			<div class="btnLine">
 				<p>_</p>
 			</div>
-			
+
 			<div class="input-group-prepend">
 				<%--This is Grade showing with option --%>
 				<div class="dropdown">
@@ -341,8 +341,7 @@
 					<select name="selectedGrade">
 						<!-- Add a name attribute -->
 						<c:forEach var="g" items="${grade}">
-							<option class="font" value="${g.grade_id}">
-								${g.name}</option>
+							<option class="font" value="${g.grade_id}">${g.name}</option>
 							<!-- Add a value attribute -->
 						</c:forEach>
 					</select>
@@ -353,8 +352,7 @@
 					<select name="selectedClass">
 						<!-- Add a name attribute -->
 						<c:forEach var="c" items="${clas}">
-							<option class="font" value="${c.class_id}">
-								${c.name}</option>
+							<option class="font" value="${c.class_id}">${c.name}</option>
 							<!-- Add a value attribute -->
 						</c:forEach>
 					</select>

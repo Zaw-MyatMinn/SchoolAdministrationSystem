@@ -270,7 +270,7 @@ textarea {
 						<table class="table row-sm-6">
 							<tr>
 								<td class="font">Student Name<input type="text"
-									class="data" value="${sap.student.name}" readonly/></td>
+									class="data" value="${sap.student.name}" readonly /></td>
 							</tr>
 
 						</table>
@@ -280,7 +280,7 @@ textarea {
 						<table class="table row-sm-6">
 							<tr>
 								<td class="font">Student ID<input type="text" class="data"
-									value="${sap.student.student_id}" readonly/></td>
+									value="${sap.student.student_id}" readonly /></td>
 							</tr>
 						</table>
 					</div>
@@ -298,7 +298,7 @@ textarea {
 						<table class="table row-sm-4">
 							<tr>
 								<td class="font">Grade<input type="text" class="data1"
-									value="${sap.grade.name}"readonly/></td>
+									value="${sap.grade.name}" readonly /></td>
 							</tr>
 
 						</table>
@@ -308,7 +308,7 @@ textarea {
 						<table class="table row-sm-4">
 							<tr>
 								<td class="font">Class<input type="text" class="data1"
-									value="${sap.clas.name }" readonly/></td>
+									value="${sap.clas.name }" readonly /></td>
 							</tr>
 						</table>
 					</div>
@@ -318,7 +318,7 @@ textarea {
 							<tr>
 								<td class="font">Amount <input id="amount"
 									onkeyup="autoFillAmount()" class="data" required="true"
-									value="${sap.class_amount}" name="class_amount"/> <script>
+									value="${sap.class_amount}" name="class_amount" /> <script>
 										function autoFillAmount() {
 											var amount = document
 													.getElementById('amount');
@@ -326,19 +326,20 @@ textarea {
 													.getElementById('auto_fill_amount');
 											var total_amount = document
 													.getElementById('total_tution_fee');
-											var totalDiscountAmount=document
-											.getElementById('totalDiscountAmount');
+											var totalDiscountAmount = document
+													.getElementById('totalDiscountAmount');
 											var discountAmount = document
-											.getElementById('discountAmount');
-											
-											var totalAmount = document.getElementById('total');
+													.getElementById('discountAmount');
 
-											totalAmount.value = amount.value - discountAmount.value;
-											
+											var totalAmount = document
+													.getElementById('total');
+
+											totalAmount.value = amount.value
+													- discountAmount.value;
 
 											title_id.value = amount.value;
 											total_amount.value = amount.value;
-											totalDiscountAmount.value  = discountAmount.value ;
+											totalDiscountAmount.value = discountAmount.value;
 										}
 									</script>
 								</td>
@@ -349,8 +350,8 @@ textarea {
 				<div class="u73_div">
 					<div class="amt">
 						<span>Total Amount of Tuition Fees&nbsp;:</span><input type="text"
-							class="data2"
-							id="total_tution_fee"  value="${sap.class_amount}" readonly/>
+							class="data2" id="total_tution_fee" value="${sap.class_amount}"
+							readonly />
 					</div>
 					<script>
 						
@@ -358,13 +359,14 @@ textarea {
 					<div class="amt">
 						<span>Total Discount Amount&nbsp; &nbsp; &nbsp; &nbsp;
 							&nbsp; &nbsp;:</span><input type="text" class="data2"
-							id="totalDiscountAmount" value="${sap.promotion}" readonly/>
+							id="totalDiscountAmount" value="${sap.promotion}" readonly />
 					</div>
 					<div class="amt">
 						<span>Total Net Amount&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</span><input type="text"
-							class="data2" id="total"  onclick="calculateDiscount()"
-							 value="${sap.total_payment_amount }" name="total_payment_amount" readonly/>
+							class="data2" id="total" onclick="calculateDiscount()"
+							value="${sap.total_payment_amount }" name="total_payment_amount"
+							readonly />
 					</div>
 				</div>
 			</div>
@@ -379,10 +381,10 @@ textarea {
 				<div class="row" style="height: 80px;">
 					<div class="col-sm-4 font">
 						<label for="myCheck" class="font">Has Discount?</label> <input
-							type="checkbox" id="myCheck" onclick="percentage()" >
+							type="checkbox" id="myCheck" onclick="percentage()">
 						<p id="text" style="display: none" class="font">
-							Discount Amount <input onkeyup="autoFillAmount()"  class="data"
-							 id="discountAmount" value="${sap.promotion}" name="promotion">
+							Discount Amount <input onkeyup="autoFillAmount()" class="data"
+								id="discountAmount" value="${sap.promotion}" name="promotion">
 					</div>
 					<script>
 						function percentage() {
@@ -400,7 +402,7 @@ textarea {
 					<div class="table col-sm-6">
 						<table class="table row-sm-6">
 							<tr>
-								<td class="font">Enter Payment Type<select class="data" >
+								<td class="font">Enter Payment Type<select class="data">
 										<option class="input_option" value="CashDown">CASH
 											DOWN</option>
 										<option class="input_option" value="Banking">BANK
@@ -415,22 +417,23 @@ textarea {
 						<table class="table row-sm-6">
 							<tr>
 								<td class="font">Payment Amount<input type="text"
-									 class="data" id="auto_fill_amount" value="${sap.total_tution_fee_amount }"
+									class="data" id="auto_fill_amount"
+									value="${sap.total_tution_fee_amount }"
 									name="total_tution_fee_amount" readonly>
 								</td>
 							</tr>
 							<tr>
-								<td class="font"><input type="text"
-									 class="data" value="${sap.academic_payment_id}" 
-									hidden="true" name="academic_payment_id">
-								</td>
+								<td class="font"><input type="text" class="data"
+									value="${sap.academic_payment_id}" hidden="true"
+									name="academic_payment_id"></td>
 							</tr>
 						</table>
 					</div>
 				</div>
 				<div class="box">
 					<div>Remark</div>
-					<input class="col data" rows="4" cols="50" maxlength="50" value="${sap.remark}" readonly/>
+					<input class="col data" rows="4" cols="50" maxlength="50"
+						value="${sap.remark}" readonly />
 				</div>
 			</div>
 		</div>

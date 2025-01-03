@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-				
+
 					<div class="col-2 float-left"></div>
 				</div>
 

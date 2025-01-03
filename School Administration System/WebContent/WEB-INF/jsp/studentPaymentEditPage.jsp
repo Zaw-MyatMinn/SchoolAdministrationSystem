@@ -340,8 +340,7 @@ textarea {
 					<div class="table col-sm-3">
 						<table class="table row-sm-3">
 							<tr>
-								<td>Is_Pass? 
-								<select class="data2" name="grade_status">
+								<td>Is_Pass? <select class="data2" name="grade_status">
 										<c:forEach var="status" items="${gs}">
 											<option class="input_option" value="${status}"
 												${status == s.grade_status ? 'selected' : ''}>${status}</option>

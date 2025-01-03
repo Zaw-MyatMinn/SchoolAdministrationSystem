@@ -1,14 +1,10 @@
 package dto;
 
 import java.sql.Date;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -109,19 +105,19 @@ public class Clas {
 	public void setUpdated_by(String updated_by) {
 		this.updated_by = updated_by;
 	}
-	
+
 	@CreationTimestamp
-	@Column(name = "created_date",updatable = false)
+	@Column(name = "created_date", updatable = false)
 	private Date created_date;
 
 	@Column(name = "created_by", length = 50)
-	private String created_by="Administration";
+	private String created_by = "Administration";
 
 	@UpdateTimestamp
-	@Column(name = "updated_date",updatable = false)
+	@Column(name = "updated_date", updatable = false)
 	private Date updated_date;
 
 	@Column(name = "updated_by", length = 50)
-	private String updated_by="Administration";
+	private String updated_by = "Administration";
 
 }
