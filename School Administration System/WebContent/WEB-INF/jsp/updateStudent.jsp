@@ -161,7 +161,7 @@
 				<img
 					src="https://files.axshare.com/gsc/E33S9V/94/35/95/9435951505654fcb943cc075a4e02f53/images/student_create_form/u2.svg?pageId=6763ed4d-0d87-4dfa-96ea-bfba4316f241">
 
-				Welcome To JUDO School Administration System
+				Welcome To School Administration System
 			</h5>
 		</ul>
 

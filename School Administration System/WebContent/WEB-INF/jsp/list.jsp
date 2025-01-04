@@ -79,8 +79,8 @@
 									</svg></i>
 							</div>
 							<div class="col-10">
-								<p class="fw-bold pt-1">Welcome to JUDO School
-									Administration System</p>
+								<p class="fw-bold pt-1">Welcome to School Administration
+									System</p>
 							</div>
 						</div>
 					</div>

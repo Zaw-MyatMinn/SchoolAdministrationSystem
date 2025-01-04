@@ -34,11 +34,6 @@
 	height: 29px;
 }
 
-.headerImgContainer {
-	display: flex;
-	justify-content: center;
-}
-
 .header {
 	display: flex;
 	justify-content: center;
@@ -50,18 +45,6 @@
 	width: 477px;
 	height: 349px;
 	margin: 100px;
-}
-
-.cprImg {
-	width: 45px;
-	height: 16px;
-}
-
-.cprText {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	color: #8A8A8A;
 }
 
 .underLineImg {
@@ -137,10 +120,6 @@
 .inputForm {
 	margin: 5px;
 }
-
-.leftButton {
-	margin-top: 20px;
-}
 </style>
 
 </head>
@@ -151,10 +130,6 @@
 		<div class="col-4 lContainer">
 			<div class="left">
 				<div>
-					<div class="headerImgContainer">
-						<img class="img"
-							src="https://files.axshare.com/gsc/E33S9V/94/35/95/9435951505654fcb943cc075a4e02f53/images/login/u8.png?pageId=7425b973-021d-4852-b77c-3785fa3f3b8c" />
-					</div>
 					<div>
 						<h1 class="header">Welcome Back</h1>
 						<span class="loginHereText"> <img class="underLineImg"
@@ -179,12 +154,6 @@
 						name="password">
 				</div>
 				<button type="submit" class="btn btnColor form-control">Login</button>
-				<p class="leftButton">
-					<span class="cprText">copyright © <img class="cprImg"
-						src="https://files.axshare.com/gsc/E33S9V/94/35/95/9435951505654fcb943cc075a4e02f53/images/login/u8.png?pageId=7425b973-021d-4852-b77c-3785fa3f3b8c" />
-						All rights reserved.
-					</span>
-				</p>
 			</form>
 		</div>
 		<div class="col-8 rContainer">
@@ -193,7 +162,7 @@
 					<span>
 						<div class="rightHeaderText">
 							<img
-								src="https://files.axshare.com/gsc/E33S9V/94/35/95/9435951505654fcb943cc075a4e02f53/images/login/u1.svg?pageId=7425b973-021d-4852-b77c-3785fa3f3b8c" />JUDO
+								src="https://files.axshare.com/gsc/E33S9V/94/35/95/9435951505654fcb943cc075a4e02f53/images/login/u1.svg?pageId=7425b973-021d-4852-b77c-3785fa3f3b8c" />
 							School Administration System
 						</div>
 						<div class="rightText">To get the opportunity to work in the
